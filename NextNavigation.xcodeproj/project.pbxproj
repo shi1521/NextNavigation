@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7A48C6C1C03EF28001D4233 /* ViewLongPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A48C6B1C03EF28001D4233 /* ViewLongPress.swift */; };
 		E7DABA671BF9B0A2003B24CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DABA661BF9B0A2003B24CF /* AppDelegate.swift */; };
 		E7DABA691BF9B0A2003B24CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DABA681BF9B0A2003B24CF /* ViewController.swift */; };
 		E7DABA6C1BF9B0A2003B24CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DABA6A1BF9B0A2003B24CF /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E7A48C6B1C03EF28001D4233 /* ViewLongPress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLongPress.swift; sourceTree = "<group>"; };
 		E7DABA611BF9B0A2003B24CF /* NextNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DABA651BF9B0A2003B24CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7DABA661BF9B0A2003B24CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				E7DABA661BF9B0A2003B24CF /* AppDelegate.swift */,
 				E7DABA681BF9B0A2003B24CF /* ViewController.swift */,
 				E7DABA6A1BF9B0A2003B24CF /* Main.storyboard */,
+				E7A48C6B1C03EF28001D4233 /* ViewLongPress.swift */,
 				E7DABA6D1BF9B0A2003B24CF /* Images.xcassets */,
 				E7DABA6F1BF9B0A2003B24CF /* LaunchScreen.xib */,
 				E7DABA641BF9B0A2003B24CF /* Supporting Files */,
@@ -156,6 +159,7 @@
 		E7DABA591BF9B0A2003B24CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = LearnToProgram.tv;
 				TargetAttributes = {
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A48C6C1C03EF28001D4233 /* ViewLongPress.swift in Sources */,
 				E7DABA691BF9B0A2003B24CF /* ViewController.swift in Sources */,
 				E7DABA671BF9B0A2003B24CF /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +414,7 @@
 				E7DABA821BF9B0A2003B24CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7DABA831BF9B0A2003B24CF /* Build configuration list for PBXNativeTarget "NextNavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +423,7 @@
 				E7DABA851BF9B0A2003B24CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
