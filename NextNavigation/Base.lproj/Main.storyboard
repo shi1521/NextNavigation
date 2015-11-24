@@ -24,8 +24,8 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="L8r-lt-4PV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-DV-LEN">
-                                <rect key="frame" x="139" y="190" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-DV-LEN">
+                                <rect key="frame" x="139" y="180" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -35,6 +35,8 @@
                         <constraints>
                             <constraint firstItem="yYI-01-vhv" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="DgR-td-SUp"/>
                             <constraint firstItem="yYI-01-vhv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KNo-ep-1sX"/>
+                            <constraint firstItem="ub6-DV-LEN" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-50" id="gqn-96-pA6"/>
+                            <constraint firstItem="ub6-DV-LEN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nV4-kj-yJ4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xUP-9m-owt">
