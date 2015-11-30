@@ -17,19 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYI-01-vhv">
-                                <rect key="frame" x="137" y="225" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="L8r-lt-4PV"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-DV-LEN">
                                 <rect key="frame" x="139" y="180" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYI-01-vhv">
+                                <rect key="frame" x="113" y="211" width="95" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="3TV-n7-Av8"/>
+                                    <constraint firstAttribute="width" constant="95" id="AsU-Yk-wCe"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="투명배경화살표(red) (1).png"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zbe-dD-VLr" appends="YES" id="0SU-hB-ekJ"/>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="L8r-lt-4PV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -56,11 +61,64 @@
                         <outlet property="currentLB" destination="ub6-DV-LEN" id="Bgt-tb-0Hn"/>
                         <outlet property="firstBT" destination="ZFR-b3-eX2" id="qFQ-VC-lUs"/>
                         <outlet property="nextBT" destination="yYI-01-vhv" id="Zbq-A7-lLV"/>
+                        <segue destination="K3B-Gy-hcv" kind="presentation" identifier="depth" id="Oey-hd-BFr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="zbe-dD-VLr">
+                    <connections>
+                        <action selector="longPressed:" destination="vXZ-lx-hvc" id="aR8-uQ-cV5"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1124" y="326"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="6F7-Pk-eeo">
+            <objects>
+                <tableViewController id="t6j-BI-udd" customClass="LongPressView" customModule="NextNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CxS-2i-dZo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Yxs-XO-XY4">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yxs-XO-XY4" id="wIb-ui-aS2">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="t6j-BI-udd" id="14N-wU-Tvh"/>
+                            <outlet property="delegate" destination="t6j-BI-udd" id="u7b-3l-kKV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="0hv-kL-OXy"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsk-au-blX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="350"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PK2-Hf-2xR">
+            <objects>
+                <navigationController id="K3B-Gy-hcv" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X85-2O-h4V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="t6j-BI-udd" kind="relationship" relationship="rootViewController" id="LsD-Ws-tzk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOZ-bP-hWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="350"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cNU-vj-uzE">
@@ -79,9 +137,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmP-Fd-TnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="312" y="326"/>
+            <point key="canvasLocation" x="568" y="326"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="투명배경화살표(red) (1).png" width="358" height="257"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5MY-zf-rGX"/>
     </inferredMetricsTieBreakers>
