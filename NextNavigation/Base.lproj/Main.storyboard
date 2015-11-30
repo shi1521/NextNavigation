@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="1124" y="326"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Table View List-->
         <scene sceneID="6F7-Pk-eeo">
             <objects>
                 <tableViewController id="t6j-BI-udd" customClass="LongPressView" customModule="NextNavigation" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                             <outlet property="delegate" destination="t6j-BI-udd" id="u7b-3l-kKV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="0hv-kL-OXy"/>
+                    <navigationItem key="navigationItem" title="Table View List" id="0hv-kL-OXy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsk-au-blX" userLabel="First Responder" sceneMemberID="firstResponder"/>
