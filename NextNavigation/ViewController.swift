@@ -97,6 +97,8 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "depth") {
+            // 옵셔널 체이닝 : 여러개의 프로퍼티를 통해서 값을 가져올 때 '?' 사용하면 값이 없을 경우는 그 이후는 무시하고 nil을 반환
+            // 옵셔널 체이닝 사용 중 '?'를 사용하였을 때 nil이면 무시될 수 있음
             let LongPressNavigationController = segue.destinationViewController as! UINavigationController
             let LongPressViewController = LongPressNavigationController.viewControllers[0] as! LongPressView
             LongPressViewController.depth = depth

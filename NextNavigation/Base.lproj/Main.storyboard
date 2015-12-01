@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="57" id="3TV-n7-Av8"/>
                                     <constraint firstAttribute="width" constant="95" id="AsU-Yk-wCe"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="투명배경화살표(red) (1).png"/>
+                                <state key="normal" title="Button" image="투명배경화살표(red) (1)"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="zbe-dD-VLr" appends="YES" id="0SU-hB-ekJ"/>
                                     <segue destination="vXZ-lx-hvc" kind="show" id="L8r-lt-4PV"/>
@@ -141,7 +141,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="투명배경화살표(red) (1).png" width="358" height="257"/>
+        <image name="투명배경화살표(red) (1)" width="358" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5MY-zf-rGX"/>
